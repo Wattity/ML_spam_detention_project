@@ -9,7 +9,7 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from collections import Counter
 from nltk.stem import SnowballStemmer,WordNetLemmatizer
-from preprocessing import preprocess_text_pipeline
+from backend.preprocessing import preprocess_text_pipeline
 from preprocessing import get_message_vector
 from gensim.models import Word2Vec
 
