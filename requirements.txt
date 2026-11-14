@@ -12,6 +12,7 @@ streamlit
 uvicorn
 pydantic
 requests
+scipy==1.18.1
 
 # Download NLTK data once in Python:
 # import nltk
