@@ -18,6 +18,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent
 
 model_path = BASE_DIR / "spam_word2vec.model"
+classifier_path=BASE_DIR/'spam_model.joblib'
 
 
 app=FastAPI()
@@ -25,7 +26,7 @@ class MESSAGE(BaseModel):
     message:str
 
 #load the saved model
-with open ('spam_model.joblib',"rb") as f:
+with open (str(classifier_path),"rb") as f:
     model=joblib.load(f)
 
 #load the save wordvec:
