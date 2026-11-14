@@ -10,7 +10,7 @@ from nltk.tokenize import word_tokenize
 from collections import Counter
 from nltk.stem import SnowballStemmer,WordNetLemmatizer
 from backend.preprocessing import preprocess_text_pipeline
-from preprocessing import get_message_vector
+from backend.preprocessing import get_message_vector
 from gensim.models import Word2Vec
 
 from pathlib import Path
