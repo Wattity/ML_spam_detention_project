@@ -11,6 +11,8 @@ fastapi
 streamlit
 uvicorn
 pydantic
+streamlit
+requests
 
 # Download NLTK data once in Python:
 # import nltk

@@ -13,7 +13,11 @@ from preprocessing import preprocess_text_pipeline
 from preprocessing import get_message_vector
 from gensim.models import Word2Vec
 
+from pathlib import Path
 
+BASE_DIR = Path(__file__).resolve().parent
+
+model_path = BASE_DIR / "spam_word2vec.model"
 
 
 app=FastAPI()
@@ -25,7 +29,7 @@ with open ('spam_model.joblib',"rb") as f:
     model=joblib.load(f)
 
 #load the save wordvec:
-word2_vec=Word2Vec.load("spam_word2vec.model")
+word2_vec=Word2Vec.load(str(model_path))
 
 @app.get("/home")
 def home():
