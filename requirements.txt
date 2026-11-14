@@ -1,0 +1,20 @@
+pandas
+numpy
+matplotlib
+seaborn
+nltk
+gensim
+scikit-learn
+joblib
+pyarrow
+fastapi
+streamlit
+uvicorn
+pydantic
+
+# Download NLTK data once in Python:
+# import nltk
+# nltk.download("stopwords")
+# nltk.download("punkt")
+# nltk.download("punkt_tab")
+# nltk.download("wordnet")
