@@ -18,7 +18,7 @@ if predict_button:
         st.warning("Please Enter your message")
     else:
         try:
-            response=requests.post("http://127.0.0.1:8000/predict",json=data)
+            response=requests.post("https://ml-spam-detention-project.onrender.com",json=data)
 
             if response.status_code==422:
                 st.warning("Error")
