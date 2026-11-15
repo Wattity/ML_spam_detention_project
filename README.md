@@ -264,7 +264,7 @@ Ensure the API is running before launching the frontend.
 Check that the frontend is making requests to:
 
 ```text
-http://127.0.0.1:8000/predict
+https://ml-spam-detention-project.onrender.com/docs
 ```
 
 ## License
